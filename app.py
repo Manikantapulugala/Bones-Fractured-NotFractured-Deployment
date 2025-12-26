@@ -4,9 +4,7 @@ import numpy as np
 import pandas as pd
 import cv2
 
-MODEL_PATH = r"C:\Users\saikr\Documents\Bones Fractured NotFractured Deployment\Bones_fractured_notfractured.pkl"
-
-with open(MODEL_PATH, "rb") as f:
+with open("Bones_fractured_notfractured.pkl", "rb") as f:
     model = pickle.load(f)
 
 st.set_page_config(page_title="Bone Fracture Detection", layout="centered")
